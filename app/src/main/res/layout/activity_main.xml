@@ -1,67 +1,74 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:tools="http://schemas.android.com/tools"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:orientation="vertical"
-              android:gravity="center_horizontal"
-              android:paddingLeft="@dimen/activity_horizontal_margin"
-              android:paddingRight="@dimen/activity_horizontal_margin"
-              android:paddingTop="@dimen/activity_vertical_margin"
-              android:paddingBottom="@dimen/activity_vertical_margin"
-              tools:context=".MainActivity">
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
 
-    <TextView
-        android:text="@string/label_my_apps"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
-        android:textSize="22sp"/>
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin">
 
-    <Button
-        style="@style/AppButton"
-        android:text="@string/button_spotify_streamer_app"
-        android:id="@+id/spotify_streamer"
-        android:layout_marginBottom="@dimen/button_margin_bottom"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        <TextView
+            android:text="@string/label_my_apps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:textSize="22sp"/>
 
-    <Button
-        style="@style/AppButton"
-        android:text="@string/button_scores_app"
-        android:id="@+id/scores"
-        android:layout_marginBottom="@dimen/button_margin_bottom"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        <Button
+            style="@style/AppButton"
+            android:text="@string/button_spotify_streamer_app"
+            android:id="@+id/spotify_streamer"
+            android:layout_marginBottom="@dimen/button_margin_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 
-    <Button
-        style="@style/AppButton"
-        android:text="@string/button_library_app"
-        android:id="@+id/library"
-        android:layout_marginBottom="@dimen/button_margin_bottom"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        <Button
+            style="@style/AppButton"
+            android:text="@string/button_scores_app"
+            android:id="@+id/scores"
+            android:layout_marginBottom="@dimen/button_margin_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 
-    <Button
-        style="@style/AppButton"
-        android:text="@string/button_build_it_bigger_app"
-        android:id="@+id/builder_it_bigger"
-        android:layout_marginBottom="@dimen/button_margin_bottom"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        <Button
+            style="@style/AppButton"
+            android:text="@string/button_library_app"
+            android:id="@+id/library"
+            android:layout_marginBottom="@dimen/button_margin_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 
-    <Button
-        style="@style/AppButton"
-        android:text="@string/button_reader_app"
-        android:id="@+id/reader"
-        android:layout_marginBottom="@dimen/button_margin_bottom"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        <Button
+            style="@style/AppButton"
+            android:text="@string/button_build_it_bigger_app"
+            android:id="@+id/builder_it_bigger"
+            android:layout_marginBottom="@dimen/button_margin_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 
-    <Button
-        style="@style/AppButton.Special"
-        android:text="@string/button_capstone_app"
-        android:id="@+id/capstone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        <Button
+            style="@style/AppButton"
+            android:text="@string/button_reader_app"
+            android:id="@+id/reader"
+            android:layout_marginBottom="@dimen/button_margin_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 
-</LinearLayout>
+        <Button
+            style="@style/AppButton.Special"
+            android:text="@string/button_capstone_app"
+            android:id="@+id/capstone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</ScrollView>
